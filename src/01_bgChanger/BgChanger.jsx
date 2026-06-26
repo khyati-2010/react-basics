@@ -1,9 +1,12 @@
+import { useState } from "react";
+
 function BgChanger() {
-    const [color, setColor] = useState("skyBlue")
+    const [color, setColor] = useState("skyblue")
 
     return (
         <>
-            <div className="w-full h-screen duration-200"
+            <div 
+                className="w-full h-screen duration-200"
                 style={{ backgroundColor: color }}></div>
             <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
                 <div className="flex flex-wrap justify-center gap-3.5 shadow-lg bg-white rounded-4xl h-full p-3 m-2">
@@ -34,7 +37,7 @@ function BgChanger() {
                     <button
                         onClick={() => setColor("skyBlue")}
                         className="px-4 py-2 rounded-4xl outline-none"
-                        style={{ backgroundColor: "skyBlue" }}>
+                        style={{ backgroundColor: "skyblue" }}>
                         Blue
                     </button>
                     <button
@@ -51,8 +54,9 @@ function BgChanger() {
                     </button>
                     <button
                         onClick={() => setColor("white")}
-                        className="px-4 py-2 rounded-4xl"
-                        style={{ backgroundColor: "white" }}>
+                        className="px-4 py-2 rounded-4xl border-1"
+                        style={{ backgroundColor: "white" }}
+                    >
                         white
                     </button>
                 </div>
