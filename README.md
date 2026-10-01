@@ -1,16 +1,100 @@
-# React + Vite
+# React Basics
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of React mini-projects built while learning and practicing fundamental React concepts.
 
-Currently, two official plugins are available:
+The repository currently contains three projects:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Background Changer
+* Password Generator
+* Currency Converter
 
-## React Compiler
+## Projects
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. Background Changer
 
-## Expanding the ESLint configuration
+A simple React application that changes the background color based on user interaction.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Password Generator
+
+A password generator that allows users to generate customizable passwords.
+
+### 3. Currency Converter
+
+A currency conversion application that uses exchange-rate data to convert between different currencies.
+
+## Tech Stack
+
+* React
+* JavaScript
+* HTML
+* CSS
+* Tailwind CSS
+* Vite
+
+## Folder Structure
+
+```text
+react-basics/
+├── src/
+│   ├── 01_bgChanger/
+│   │   └── BgChanger.jsx
+│   │
+│   ├── 02_pwdGen/
+│   │   └── PwdGen.jsx
+│   │
+│   ├── 03_currency/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   └── Currency.jsx
+│   │
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+└── vite.config.js
+```
+
+## Running Locally
+
+### Prerequisites
+
+Make sure you have **Node.js** and **npm** installed.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/khyati-2010/react-basics
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd react-basics
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Vite will provide a local URL in the terminal, usually:
+
+```text
+http://localhost:5173
+```
+
+Open the URL in your browser to access the project showcase.
