@@ -54,7 +54,7 @@ function BgChanger() {
                     </button>
                     <button
                         onClick={() => setColor("white")}
-                        className="px-4 py-2 rounded-4xl border-1"
+                        className="px-4 py-2 rounded-4xl border"
                         style={{ backgroundColor: "white" }}
                     >
                         white
